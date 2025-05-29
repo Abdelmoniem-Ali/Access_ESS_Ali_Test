@@ -1,0 +1,31 @@
+import { DaysOfWeek, Frequency, RecurrencePatternType } from './Enums';
+
+export type DiaryEventInfo = {
+    diaryEventId: number;
+    eventTypeId: number;
+    resourceDiaryId: number;
+    eventTypeDescription: string;
+    subject: string;
+    startTime: Date;
+    endTime: Date;
+    allDayEvent: string;
+    isPrivate: string;
+    notebookItemId: number;
+    linkXML: string;
+    diaryColorHex: string;
+    keyId: string;
+    isAllDay: boolean;
+    contrastColor: string;
+    recurrenceRule: string;
+    recurrenceException: string;
+    patternFrequency: Frequency;
+    patternDaysOfWeek: DaysOfWeek;
+    rangeLimit: number;
+    rangeMaxOccurrences: number;
+    rangeEndDate: Date;
+    patternInterval: number;
+    patternType: RecurrencePatternType;
+    patternOccurrenceOfDayInMonth: number;
+    patternMonthOfYear: number;
+    patternDayOfMonth: number;
+};

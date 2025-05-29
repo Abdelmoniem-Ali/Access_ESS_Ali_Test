@@ -1,0 +1,6 @@
+@ARCRM.Pidgets.MultiUserDiaryAPI_HostAddress = http://localhost:5282
+
+GET {{ARCRM.Pidgets.MultiUserDiaryAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

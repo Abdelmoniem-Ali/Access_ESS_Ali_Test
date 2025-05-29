@@ -1,0 +1,11 @@
+{
+  "id": "rcrm.multi_user_diary",
+  "name": "multi_user_diary",
+  "description": "",
+  "applicationId": "",
+  "layoutMode": "spa",
+  "settings": {
+    "workspaceApiUrl": "https://preprodws.accessacloud.com/api/v2/graphql",
+    "remoteEntry": ""
+  }
+}

@@ -1,0 +1,317 @@
+{
+    "entityTypes": [
+      {
+        "name": "office",
+        "displayName": "Office",
+        "colour": "#036D83",
+        "custom": true,
+        "properties": {},
+        "searchResultMapping": {
+          "image": "image",
+          "secondaryFieldName": "postcode",
+          "tertiaryFieldName": "address"
+        },
+        "sidePanelMapping": {
+          "image": "image",
+          "heading": "title",
+          "subHeading": null,
+          "fields": []
+        }
+      },
+      {
+        "name": "person",
+        "displayName": "Person",
+        "colour": "#D5763F",
+        "custom": false,
+        "properties": {
+          "personid": {
+            "name": "personid",
+            "label": null,
+            "dataType": "string",
+            "uiType": null,
+            "primaryKey": true,
+            "key": true,
+            "searchable": false,
+            "hyperviewEntityName": "",
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          },
+          "title": {
+            "name": "title",
+            "label": null,
+            "dataType": "string",
+            "uiType": null,
+            "primaryKey": false,
+            "key": false,
+            "searchable": true,
+            "hyperviewEntityName": "",
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          },
+          "email": {
+            "name": "email",
+            "label": "email",
+            "dataType": "string",
+            "uiType": "email",
+            "primaryKey": false,
+            "key": true,
+            "searchable": true,
+            "hyperviewEntityName": "",
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          },
+          "image": {
+            "name": "image",
+            "label": null,
+            "dataType": "string",
+            "uiType": null,
+            "primaryKey": false,
+            "key": false,
+            "searchable": false,
+            "hyperviewEntityName": "",
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          },
+          "phone": {
+            "name": "phone",
+            "label": "Phone Number",
+            "dataType": "string",
+            "uiType": "string",
+            "primaryKey": false,
+            "key": false,
+            "searchable": false,
+            "hyperviewEntityName": null,
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          },
+          "office": {
+            "name": "office",
+            "label": "Home Office",
+            "dataType": "string",
+            "uiType": "hyperview",
+            "primaryKey": false,
+            "key": false,
+            "searchable": false,
+            "hyperviewEntityName": "Office",
+            "hyperviewEntityKeyName": "officeid",
+            "tagColour": ""
+          },
+          "role": {
+            "name": "role",
+            "label": "Job Title",
+            "dataType": "string",
+            "uiType": "text",
+            "primaryKey": false,
+            "key": false,
+            "searchable": false,
+            "hyperviewEntityName": null,
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          },
+          "hobbies": {
+            "name": "hobbies",
+            "label": "Hobbies",
+            "dataType": "string",
+            "uiType": "tag",
+            "primaryKey": false,
+            "key": false,
+            "searchable": false,
+            "hyperviewEntityName": null,
+            "hyperviewEntityKeyName": "",
+            "tagColour": ""
+          }
+        },
+        "searchResultMapping": {
+          "image": "image",
+          "secondaryFieldName": "email",
+          "tertiaryFieldName": "office"
+        },
+        "sidePanelMapping": {
+          "image": "image",
+          "heading": "title",
+          "subHeading": null,
+          "fields": [
+            {
+              "name": "email"
+            },
+            {
+              "name": "office"
+            },
+            {
+              "name": "role"
+            },
+            {
+              "name": "hobbies"
+            }
+          ]
+        }
+      },
+      {
+        "name": "nohyperview",
+        "displayName": "No-HV",
+        "colour": "#b84430",
+        "properties": {},
+        "searchResultMapping": {
+          "image": "image",
+          "secondaryFieldName": "summary2",
+          "tertiaryFieldName": "summary3"
+        },
+        "sidePanelMapping": {
+          "image": "image",
+          "heading": "title",
+          "subHeading": null,
+          "fields": []
+        }
+      }
+    ],
+    "entities": [
+      {
+        "entityType": "office",
+        "hyperviewUri": "hyperview:///entity=office?_id=office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAA&officeid=BCEC91E6-73BB-41D7-8726-0257A7D39492&office=London",
+        "internalId": "office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAA",
+        "keys": {
+          "officeid": "BCEC91E6-73BB-41D7-8726-0257A7D39492",
+          "office": "London"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?auto=compress&h=200",
+          "title": "London",
+          "postcode": "WC2N 5DU",
+          "address": "A4, London, UK"
+        }
+      },
+      {
+        "entityType": "office",
+        "hyperviewUri": "hyperview:///entity=office?_id=office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAB&officeid=9F66F87B-AC8D-4F0C-92C5-044D0C761BBA&office=Dundee",
+        "internalId": "office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAB",
+        "keys": {
+          "officeid": "9F66F87B-AC8D-4F0C-92C5-044D0C761BBA",
+          "office": "Dundee"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&h=200",
+          "title": "Dundee",
+          "postcode": "DD1",
+          "address": "3 New Inn Entry, Dundee, UK"
+        }
+      },
+      {
+        "entityType": "office",
+        "hyperviewUri": "hyperview:///entity=office?_id=office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAC&officeid=34796456-2837-488E-953D-06EFB31F9A79&office=Birmingham",
+        "internalId": "office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAC",
+        "keys": {
+          "officeid": "34796456-2837-488E-953D-06EFB31F9A79",
+          "office": "Birmingham"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/4348331/pexels-photo-4348331.jpeg?auto=compress&h=200",
+          "title": "Birmingham",
+          "postcode": "B4 7DA",
+          "address": "83 Aston St, Birmingham, UK"
+        }
+      },
+      {
+        "entityType": "office",
+        "hyperviewUri": "hyperview:///entity=office?_id=office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAD&officeid=CC8CCA3E-B279-4142-B943-07FC94B9AF43&office=Belware",
+        "internalId": "office_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAD",
+        "keys": {
+          "officeid": "CC8CCA3E-B279-4142-B943-07FC94B9AF43",
+          "office": "Belware"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/210466/pexels-photo-210466.jpeg?auto=compress&h=200",
+          "title": "Belware",
+          "postcode": "300101",
+          "address": "Bulevardul 3 August 1919 nr. 27-T"
+        }
+      },
+      {
+        "entityType": "person",
+        "hyperviewUri": "hyperview:///entity=person?_id=person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAA&personid=e7c17cff-e085-4ef6-95bb-afd0d0ab24da&email=brian.jones@yahoo.com&applicantid=1758",
+        "internalId": "person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAA",
+        "keys": {
+          "personid": "e7c17cff-e085-4ef6-95bb-afd0d0ab24da",
+          "email": "brian.jones@yahoo.com",
+          "applicantid": "1758"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&h=200",
+          "title": "Brian Jones",
+          "office": "London",
+          "hobbies": "Videogames,Reading",
+          "role": "Coordinator",
+          "department": "HR",
+          "email": "brian.jones@yahoo.com"
+        }
+      },
+      {
+        "entityType": "person",
+        "hyperviewUri": "hyperview:///entity=person?_id=person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAB&personid=e7c17cff-e085-4ef6-95bb-afd0d0ab24db&email=Laura.Copaceanu@gmail.com",
+        "internalId": "person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAB",
+        "keys": {
+          "personid": "e7c17cff-e085-4ef6-95bb-afd0d0ab24db",
+          "email": "Laura.Copaceanu@gmail.com"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/220454/pexels-photo-220454.jpeg?auto=compress&h=200",
+          "title": "Laura Copaceanu",
+          "office": "Birmingham",
+          "hobbies": "Knitting,Walking",
+          "role": "Administrator",
+          "department": "HR",
+          "email": "Laura.Copaceanu@gmail.com"
+        }
+      },
+      {
+        "entityType": "person",
+        "hyperviewUri": "hyperview:///entity=person?_id=person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAC&personid=e7c17cff-e085-4ef6-95bb-afd0d0ab24dc&email=Kishen.Vora@gmail.com",
+        "internalId": "person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAC",
+        "keys": {
+          "personid": "e7c17cff-e085-4ef6-95bb-afd0d0ab24dc",
+          "email": "Kishen.Vora@gmail.com"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/220459/pexels-photo-220459.jpeg?auto=compress&h=200",
+          "title": "Kishen Vora",
+          "office": "Dundee",
+          "hobbies": "Swimming,Garderning,Keeping Fit",
+          "role": "Controller",
+          "department": "HR",
+          "email": "Kishen.Vora@gmail.com"
+        }
+      },
+      {
+        "entityType": "person",
+        "hyperviewUri": "hyperview:///entity=person?_id=person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAD&personid=e7c17cff-e085-4ef6-95bb-afd0d0ab24dd&email=Rob.Hamlin@bt.com",
+        "internalId": "person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAD",
+        "keys": {
+          "personid": "e7c17cff-e085-4ef6-95bb-afd0d0ab24dd",
+          "email": "Rob.Hamlin@bt.com"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/121593/pexels-photo-121593.jpeg?auto=compress&h=200",
+          "title": "Rob Hamlin",
+          "office": "London",
+          "hobbies": "Baking",
+          "role": "Team Leader",
+          "department": "HR",
+          "email": "Rob.Hamlin@bt.com"
+        }
+      },
+      {
+        "entityType": "nohyperview",
+        "hyperviewUri": "hyperview:///entity=nohyperview?_id=person_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAA&key1=Sunset Horizon",
+        "internalId": "nohyperview_9oIOyzAVzKFsMmstfdERSSthMByflbUf-yzmFUTzjAA",
+        "keys": {
+          "key1": "Sunset Horizon"
+        },
+        "properties": {
+          "image": "https://images.pexels.com/photos/220458/pexels-photo-220458.jpeg?auto=compress&h=200",
+          "title": "Sunset",
+          "summary1": "Sunset",
+          "summary2": "Red Sky",
+          "summary3": "Horizon"
+        }
+      }
+    ]
+  }
